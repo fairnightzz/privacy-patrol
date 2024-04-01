@@ -92,9 +92,9 @@ export function YourPhone() {
           className="flex flex-col justify-center items-center w-full mx-auto bg-white p-5 h-[700px] sm:h-[700px] md:h-[900px] lg:h-[900px]"
           style={{ backgroundImage: `url(${phoneScreenBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-          <div className="grid grid-cols-3 gap-8 pt-4 justify-items-center">
+          <div className="grid grid-cols-3 gap-4 px-4 justify-items-center">
             {apps.map((app, index) => (
-              <div key={index} className="flex flex-col justify-center items-center">
+              <div key={index} className="flex flex-col justify-center items-center text-center">
                 <IconButton size="4" radius="full" variant="soft" onClick={() => moveToApp(app.App)}>
                   <Image src={`/images/${app.image}`} alt="Instagram" width={50} height={50} style={{ objectFit: "contain" }} className="cursor-pointer" />
                   {/* <FaBars /> */}

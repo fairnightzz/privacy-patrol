@@ -41,6 +41,21 @@ type FormContextData = {
 
   games2Field: Field;
   dispatchGames2Field: React.Dispatch<any>;
+  question1: Field;
+  dispatchQuestion1: React.Dispatch<any>;
+  question2: Field;
+  dispatchQuestion2: React.Dispatch<any>;
+  question3: Field;
+  dispatchQuestion3: React.Dispatch<any>;
+  question4: Field;
+  dispatchQuestion4: React.Dispatch<any>;
+  question5: Field;
+  dispatchQuestion5: React.Dispatch<any>;
+  question6: Field;
+  dispatchQuestion6: React.Dispatch<any>;
+  question7: Field;
+  dispatchQuestion7: React.Dispatch<any>;
+
 
   nameField: Field;
   dispatchNameField: React.Dispatch<any>;
@@ -87,6 +102,21 @@ export const FormContext = createContext({
   dispatchGames1Field: () => { },
   games2Field: initialState,
   dispatchGames2Field: () => { },
+
+  question1: initialState,
+  dispatchQuestion1: () => { },
+  question2: initialState,
+  dispatchQuestion2: () => { },
+  question3: initialState,
+  dispatchQuestion3: () => { },
+  question4: initialState,
+  dispatchQuestion4: () => { },
+  question5: initialState,
+  dispatchQuestion5: () => { },
+  question6: initialState,
+  dispatchQuestion6: () => { },
+  question7: initialState,
+  dispatchQuestion7: () => { },
 
   nameField: initialState,
   dispatchNameField: () => { },
@@ -168,6 +198,14 @@ export const FormProvider = ({ children }: FormProviderProps) => {
   const [games1Field, dispatchGames1Field] = useReducer(handleFormState, initialState);
   const [games2Field, dispatchGames2Field] = useReducer(handleFormState, initialState);
 
+  // Questions
+  const [question1, dispatchQuestion1] = useReducer(handleFormState, initialState);
+  const [question2, dispatchQuestion2] = useReducer(handleFormState, initialState);
+  const [question3, dispatchQuestion3] = useReducer(handleFormState, initialState);
+  const [question4, dispatchQuestion4] = useReducer(handleFormState, initialState);
+  const [question5, dispatchQuestion5] = useReducer(handleFormState, initialState);
+  const [question6, dispatchQuestion6] = useReducer(handleFormState, initialState);
+  const [question7, dispatchQuestion7] = useReducer(handleFormState, initialState);
 
   // Your Info
   const [nameField, dispatchNameField] = useReducer(handleFormState, initialState)
@@ -187,9 +225,21 @@ export const FormProvider = ({ children }: FormProviderProps) => {
     // todo: clear state here
 
 
-    removeValueFromLocalStorage('your-info')
-    removeValueFromLocalStorage('plan')
-    removeValueFromLocalStorage('add-ons')
+    removeValueFromLocalStorage('q1')
+    removeValueFromLocalStorage('q2')
+    removeValueFromLocalStorage('q3')
+    removeValueFromLocalStorage('q4')
+    removeValueFromLocalStorage('q5')
+    removeValueFromLocalStorage('q6')
+    removeValueFromLocalStorage('q7')
+
+    dispatchQuestion1({ type: ACTIONS.SET_VALUE, value: '' })
+    dispatchQuestion2({ type: ACTIONS.SET_VALUE, value: '' })
+    dispatchQuestion3({ type: ACTIONS.SET_VALUE, value: '' })
+    dispatchQuestion4({ type: ACTIONS.SET_VALUE, value: '' })
+    dispatchQuestion5({ type: ACTIONS.SET_VALUE, value: '' })
+    dispatchQuestion6({ type: ACTIONS.SET_VALUE, value: '' })
+    dispatchQuestion7({ type: ACTIONS.SET_VALUE, value: '' })
 
     dispatchNameField({ type: ACTIONS.SET_VALUE, value: '' })
     dispatchEmailField({ type: ACTIONS.SET_VALUE, value: '' })
@@ -202,6 +252,16 @@ export const FormProvider = ({ children }: FormProviderProps) => {
   useEffect(() => {
     // todo: keep state here
 
+    const questions = getValueFromLocalStorage('questions')
+    if (questions) {
+      dispatchQuestion1({ type: ACTIONS.SET_VALUE, value: questions.q1 })
+      dispatchQuestion2({ type: ACTIONS.SET_VALUE, value: questions.q2 })
+      dispatchQuestion3({ type: ACTIONS.SET_VALUE, value: questions.q3 })
+      dispatchQuestion4({ type: ACTIONS.SET_VALUE, value: questions.q4 })
+      dispatchQuestion5({ type: ACTIONS.SET_VALUE, value: questions.q5 })
+      dispatchQuestion6({ type: ACTIONS.SET_VALUE, value: questions.q6 })
+      dispatchQuestion7({ type: ACTIONS.SET_VALUE, value: questions.q7 })
+    }
 
     const yourInfoFromLocalStorage = getValueFromLocalStorage('your-info')
     if (yourInfoFromLocalStorage) {
@@ -247,6 +307,21 @@ export const FormProvider = ({ children }: FormProviderProps) => {
     dispatchGames1Field,
     games2Field,
     dispatchGames2Field,
+
+    question1,
+    dispatchQuestion1,
+    question2,
+    dispatchQuestion2,
+    question3,
+    dispatchQuestion3,
+    question4,
+    dispatchQuestion4,
+    question5,
+    dispatchQuestion5,
+    question6,
+    dispatchQuestion6,
+    question7,
+    dispatchQuestion7,
 
     nameField,
     dispatchNameField,
