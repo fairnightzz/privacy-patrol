@@ -5,6 +5,8 @@ import { YourInfo } from "./YourInfo";
 import { YourApps } from "./YourApps";
 import { Plans } from "./Plans";
 import { ScenarioOne } from "./ScenarioOne";
+import { SpecificApp } from "./App";
+import { Instagram } from "./Apps/Instagram";
 import { AddOns } from "./AddOns";
 import { Summary } from "./Summary";
 
@@ -18,8 +20,16 @@ const steps = [
     component: YourPhone
   },
   {
-    step: 2.1,
-    component: ScenarioOne // Targeted Advertising
+    step: 2.01,
+    component: SpecificApp // Targeted Advertising
+  },
+  {
+    step: 2.02,
+    component: Instagram // Targeted Advertising
+  },
+  {
+    step: 2.03,
+    component: SpecificApp // Targeted Advertising
   },
   {
     step: 3,

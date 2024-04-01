@@ -8,6 +8,7 @@ type FormStepContextData = {
   handlePreviousStep: () => void;
   moveToStep(step: number): void;
   setStorageStep(step: number): void;
+  moveToApp(app: string): void;
 }
 
 export const FormStepContext = createContext({
@@ -17,6 +18,7 @@ export const FormStepContext = createContext({
   handlePreviousStep: () => { },
   moveToStep: () => { },
   setStorageStep: () => { },
+  moveToApp: () => { },
 } as FormStepContextData);
 
 interface FormStepProviderProps {
@@ -28,7 +30,9 @@ export const FormStepProvider = ({ children }: FormStepProviderProps) => {
   const [steps, _] = useState([
     { title: 'Your Apps', number: 1 },
     { title: 'Your Phone', number: 2 },
-    { title: 'Scenario 1', number: 2.1 },
+    { title: 'Specfic App', number: 2.01 },
+    { title: 'Instagram', number: 2.02 },
+    { title: 'Messenger', number: 2.03 },
     { title: 'ADD-ONS', number: 3 },
     { title: 'ADD-ONS', number: 4 },
     { title: 'Summary', number: 5 },
@@ -62,12 +66,20 @@ export const FormStepProvider = ({ children }: FormStepProviderProps) => {
     saveValueToLocalStorage('currentStep', `${step}`)
   }
 
+  const moveToApp = (app: string) => {
+    const step = steps.find(({ title }) => title === app);
+    if (step) {
+      setCurrentStep(step.number);
+      saveValueToLocalStorage('currentStep', `${step.number}`)
+    }
+  }
+
   const setStorageStep = (step: number) => {
     saveValueToLocalStorage('currentStep', `${step}`)
   }
 
   return (
-    <FormStepContext.Provider value={{ steps, currentStep, handleNextStep, handlePreviousStep, moveToStep, setStorageStep }}>
+    <FormStepContext.Provider value={{ steps, currentStep, handleNextStep, handlePreviousStep, moveToStep, setStorageStep, moveToApp }}>
       {children}
     </FormStepContext.Provider>
   );

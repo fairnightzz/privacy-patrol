@@ -12,7 +12,7 @@ import { Switch } from "./Switch";
 
 import plans from '../../../../data/plans.json'
 
-export function ScenarioOne() {
+export function SpecificApp() {
   const {
     selectedPlan,
     setSelectedPlan,
@@ -61,7 +61,7 @@ export function ScenarioOne() {
     <Fragment>
       <Form.Card>
         <Form.Header
-          title="Select the route you want to take"
+          title="Title of App"
           description="asdf"
         />
 

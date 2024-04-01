@@ -2,7 +2,7 @@ import { useFormStep } from "../../hooks/use-form-step";
 
 interface FooterProps {
   handleGoBack: () => void;
-  handleGoForwardStep: () => void;
+  handleGoForwardStep?: () => void;
 }
 
 export function Footer({ handleGoBack, handleGoForwardStep }: FooterProps) {
@@ -19,12 +19,15 @@ export function Footer({ handleGoBack, handleGoForwardStep }: FooterProps) {
       >
         Go back
       </button>
-      <button
-        onClick={handleGoForwardStep}
-        className={`${isLastStep ? 'bg-purple' : 'bg-denim'} py-3 px-4 rounded text-sm text-white font-medium sm:text-base`}
-      >
-        {isLastStep ? 'Confirm' : 'Next step'}
-      </button>
+      {
+        handleGoForwardStep &&
+        <button
+          onClick={handleGoForwardStep}
+          className={`${isLastStep ? 'bg-purple' : 'bg-denim'} py-3 px-4 rounded text-sm text-white font-medium sm:text-base`}
+        >
+          {isLastStep ? 'Confirm' : 'Next step'}
+        </button>
+      }
     </footer >
   )
 }

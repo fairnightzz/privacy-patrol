@@ -10,6 +10,9 @@ import { ACTIONS } from "../../../contexts/form";
 import { TextInput } from "../../Form/TextInput";
 import Form from "../../Form";
 import { Footer } from "../../Footer";
+import { IconButton } from '@radix-ui/themes';
+import { FaBars } from 'react-icons/fa';
+import apps from '@/data/apps.json'
 
 export function YourPhone() {
   const {
@@ -21,7 +24,7 @@ export function YourPhone() {
     dispatchPhoneNumberField
   } = useForm()
 
-  const { handleNextStep, handlePreviousStep } = useFormStep()
+  const { handleNextStep, handlePreviousStep, moveToApp } = useFormStep()
 
   const { saveValueToLocalStorage } = useLocalStorage()
 
@@ -69,42 +72,35 @@ export function YourPhone() {
     }
   }
 
+  const phoneScreenBackground = "/images/phone.png"
+
   return (
     <Fragment>
       <Form.Card>
         <Form.Header
           title="Your phone"
-          description="Please provide your name, email address, and phone number."
+          description="Click on each app to view a scenarios that could arise. When you are ready, start the privacy test!"
         />
 
-        <div className="mt-5 flex flex-col gap-4">
-          <TextInput
-            label="Name"
-            placeholder="e.g. Stephen King"
-            value={nameField.value}
-            onChange={(value: string) => dispatchNameField({ type: ACTIONS.SET_VALUE, value })}
-            errorMessage={nameField.errorMessage}
-            clearError={() => dispatchNameField({ type: ACTIONS.CLEAR_ERROR })}
-            hasError={nameField.hasError}
-          />
-          <TextInput
-            label="Email Address"
-            placeholder="e.g. stephenking@lorem.com"
-            value={emailField.value}
-            onChange={(value: string) => dispatchEmailField({ type: ACTIONS.SET_VALUE, value })}
-            errorMessage={emailField.errorMessage}
-            clearError={() => dispatchEmailField({ type: ACTIONS.CLEAR_ERROR })}
-            hasError={emailField.hasError}
-          />
-          <TextInput
-            label="Phone Number"
-            placeholder="e.g. +1 234 567 890"
-            value={phoneNumberField.value}
-            onChange={(value: string) => dispatchPhoneNumberField({ type: ACTIONS.SET_VALUE, value })}
-            errorMessage={phoneNumberField.errorMessage}
-            clearError={() => dispatchPhoneNumberField({ type: ACTIONS.CLEAR_ERROR })}
-            hasError={phoneNumberField.hasError}
-          />
+        {/* <div className="mt-5 flex flex-col gap-4">
+
+
+        </div> */}
+
+        <div
+          className="flex flex-col justify-center items-center w-full mx-auto bg-white p-5 h-[700px] sm:h-[700px] md:h-[900px] lg:h-[900px]"
+          style={{ backgroundImage: `url(${phoneScreenBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
+          <div className="grid grid-cols-3 gap-8 pt-4 justify-items-center">
+            {apps.map((app, index) => (
+              <div key={index} className="flex flex-col justify-center items-center">
+                <IconButton size="4" radius="full" variant="soft" onClick={() => moveToApp(app.App)}>
+                  <FaBars />
+                </IconButton>
+                <div>{app.App}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </Form.Card>
       <Footer
