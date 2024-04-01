@@ -8,8 +8,9 @@ import { AddOnOption } from "./AddOnOption";
 import { Footer } from "../../Footer";
 import Form from "../../Form";
 import { AddonWithPrices, Addon } from "../../../types/add-ons";
+import { Select, Callout } from '@radix-ui/themes';
 
-import ADD_ONS from '../../../../data/add-ons.json'
+import apps from '@/data/apps.json'
 
 export function PrivacyTest() {
 
@@ -46,16 +47,43 @@ export function PrivacyTest() {
         />
 
         <div className="mt-5 flex flex-col gap-3">
-          {ADD_ONS.map((addOn, index) => (
-            <AddOnOption
-              key={index}
-              addOn={addOn}
-              isSelected={!!addOns.find(({ title }) => addOn.title === title)}
-              handleSelectAddon={handleSelectAddon}
-              handleUnselectedAddon={handleUnselectedAddon}
-            />
-          ))}
+          <div className="mt-5 flex flex-col gap-3">
+            <div className="text-black text-lg leading-5">Random question. Give me the answer</div>
+            <Select.Root >
+              <Select.Trigger />
+              <Select.Content>
+                <Select.Group>
+                  {
+                    apps.map((app, index) => (
+                      <Select.Item value={app.App} key={index}>
+                        {app.App}
+                      </Select.Item>
+                    ))
+                  }
+                </Select.Group>
+              </Select.Content>
+            </Select.Root>
+          </div>
+
+          <div className="mt-5 flex flex-col gap-3">
+            <div className="text-black text-lg leading-5">Random question. Give me the answer</div>
+            <Select.Root >
+              <Select.Trigger />
+              <Select.Content>
+                <Select.Group>
+                  {
+                    apps.map((app, index) => (
+                      <Select.Item value={app.App} key={index}>
+                        {app.App}
+                      </Select.Item>
+                    ))
+                  }
+                </Select.Group>
+              </Select.Content>
+            </Select.Root>
+          </div>
         </div>
+
       </Form.Card>
       <Footer
         handleGoForwardStep={handleGoForwardStep}

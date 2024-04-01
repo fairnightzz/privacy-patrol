@@ -144,7 +144,7 @@ export function YourApps() {
             </Select.Content>
           </Select.Root>
 
-          <Select.Root onValueChange={(value: string) => dispatchSocialMedia1Field({ type: ACTIONS.SET_VALUE, value })}>
+          <Select.Root onValueChange={(value: string) => dispatchSocialMedia2Field({ type: ACTIONS.SET_VALUE, value })}>
             <Select.Trigger />
             <Select.Content>
               <Select.Group>

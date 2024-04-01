@@ -32,7 +32,7 @@ export function Summary() {
 
       setTimeout(() => {
         moveToStep(1)
-      }, 4000)
+      }, 10000)
     }
   }, [submitted, moveToStep])
 
@@ -53,7 +53,7 @@ export function Summary() {
           description="Double-check everything looks OK before confirming."
         />
 
-        <div className="mt-5 flex flex-col gap-3 bg-very-light-grey rounded-lg p-4 sm:px-6">
+        {/* <div className="mt-5 flex flex-col gap-3 bg-very-light-grey rounded-lg p-4 sm:px-6">
           <div className="flex items-center justify-between">
             <div className="flex flex-col gap-1 items-start">
               <strong className="text-sm font-medium text-denim sm:text-base">
@@ -89,11 +89,11 @@ export function Summary() {
         <TotalPrice
           finalPrice={finalPrice}
           isYearly={isYearly}
-        />
+        /> */}
       </Form.Card>
       <Footer
         handleGoForwardStep={handleGoForwardStep}
-        handleGoBack={handlePreviousStep}
+      // handleGoBack={handlePreviousStep}
       />
     </Fragment>
   )
