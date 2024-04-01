@@ -1,13 +1,13 @@
 import { Fragment } from "react";
 
-import { useForm } from "../../../hooks/use-form";
-import { useFormStep } from "../../../hooks/use-form-step";
-import { useLocalStorage } from "../../../hooks/use-local-storage";
+import { useForm } from "@/app/hooks/use-form";
+import { useFormStep } from "@/app/hooks/use-form-step";
+import { useLocalStorage } from "@/app/hooks/use-local-storage";
 
 import { AddOnOption } from "./AddOnOption";
 import { Footer } from "../../Footer";
 import Form from "../../Form";
-import { AddonWithPrices, Addon } from "../../../types/add-ons";
+import { AddonWithPrices, Addon } from "@/app/types/add-ons";
 import { Select, Callout } from '@radix-ui/themes';
 
 import apps from '@/data/apps.json'

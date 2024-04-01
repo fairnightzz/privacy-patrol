@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 
-import { useForm } from "../../../hooks/use-form";
-import { useFormStep } from "../../../hooks/use-form-step";
-import { priceFormatter } from "../../../util/price-formatter";
+import { useForm } from "@/app/hooks/use-form";
+import { useFormStep } from "@/app/hooks/use-form-step";
+import { priceFormatter } from "@/app/util/price-formatter";
 
 import { Footer } from "../../Footer";
 import Form from "../../Form";

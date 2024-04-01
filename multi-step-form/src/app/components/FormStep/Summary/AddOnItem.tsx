@@ -1,4 +1,4 @@
-import { priceFormatter } from "../../../util/price-formatter";
+import { priceFormatter } from "@/app/util/price-formatter";
 
 interface AddOnItemProps {
   title: string;
