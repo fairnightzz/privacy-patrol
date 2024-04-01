@@ -22,6 +22,7 @@ export function Summary() {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (submitted) {
       clearForm()
       setStorageStep(1)
@@ -30,7 +31,7 @@ export function Summary() {
         moveToStep(1)
       }, 10000)
     }
-  }, [submitted, moveToStep])
+  }, [submitted, moveToStep, clearForm, setStorageStep])
 
   if (submitted) {
     return (
@@ -54,15 +55,42 @@ export function Summary() {
     "You were worrying that you may be exhibiting signs of diabetes. Unfortunately, Ada doesn't keep your information private and may share it with other companies. Insurance companies in particular can use this data to make decisions that you may not be aware of."
   ]
 
+
+  const comparison = [question1.value === answers[0],
+  question2.value === answers[1],
+  question3.value === answers[2],
+  question4.value === answers[3],
+  question5.value === answers[4],
+  question6.value === answers[5],
+  question7.value === answers[6]
+  ].filter(item => item === true).length
+
   return (
     <Fragment>
       <Form.Card>
         <Form.Header
-          title="Results"
+          title="Summary"
           description="See how you did!"
         />
 
         <div className="mt-5 flex flex-col gap-3">
+          <h1 className="text-denim font-bold text-xl sm:text-2xl">Score: {Math.round(comparison / 7 * 100)}%</h1>
+          <div className="text-black text-lg leading-5">After taking the test and viewing your score, does this change how you will share data with apps that you are using?</div>
+          <Select.Root onValueChange={(value: string) => { }}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Item value="Yes">
+                  Yes
+                </Select.Item>
+                <Select.Item value="No">
+                  No
+                </Select.Item>
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
+
+          <h1 className="text-denim font-bold text-2xl sm:text-3xl mt-5">Results</h1>
           <div className="mt-5 flex flex-col gap-3">
             <Image src={`/images/yogurt.png`} className="w-full" unoptimized={true} width={500} height={100} alt="yogurt" style={{ objectFit: "contain" }} />
             <div className="text-black text-lg leading-5">You receive an email from Hi Yogurt, even though you do not recall giving them your email. Which app shared your data?</div>
