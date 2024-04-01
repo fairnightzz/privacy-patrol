@@ -5,6 +5,7 @@ import Form from "@/app/components/Form";
 
 import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
+import { PrivacyTable } from "@/app/components/Table";
 
 import apps from '@/data/apps.json'
 
@@ -32,6 +33,7 @@ export function Sephora() {
             However, as the hours ticked by, your initial excitement began to wane. Despite the vast selection and the high promises, none of the products felt quite right. Some had ingredients she was allergic to, others were from brands she didn&apos;t prefer, and a few just didn&apos;t seem special enough for such an occasion. The realization dawned on you that you might not find what you were looking for, no matter how convenient and extensive its offerings were. Reluctantly, you decided it was time to expand your search to other sites, hopeful that somewhere out there was the perfect skincare gift waiting to be discovered. With a renewed sense of purpose, you closed the app and began your quest anew, determined to find a gift that would epitomize your appreciation and affection for her.
           </p>
         </div>
+        <PrivacyTable appName={app.App} />
       </Form.Card>
       <Footer
         handleGoBack={() => moveToApp("Your Phone")}

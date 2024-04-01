@@ -5,6 +5,7 @@ import Form from "@/app/components/Form";
 
 import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
+import { PrivacyTable } from "@/app/components/Table";
 
 import apps from '@/data/apps.json'
 
@@ -32,6 +33,8 @@ export function Notion() {
             In the aftermath, with emotions too raw and thoughts too jumbled to confront your teacher or discuss it with classmates, you turned to the one outlet that had always offered solace: your digital journal on Notion. There, under the glow of your phone screen or tablet, you poured out everything. The words flowed from your fingertips, a torrent of feelings and reflections on the day&apos;s events. You detailed the incident, your reactions, and the deep sense of injustice that gnawed at you. Journaling provided a safe space to vent and articulate your thoughts, serving as a therapeutic release. It allowed you to step back, assess the situation more objectively, and devise a plan of action. This digital outpouring not only helped to calm the storm of emotions within you but also became a crucial step in navigating the complexities of school dynamics and advocating for yourself in the days that followed.
           </p>
         </div>
+
+        <PrivacyTable appName={app.App} />
       </Form.Card>
       <Footer
         handleGoBack={() => moveToApp("Your Phone")}

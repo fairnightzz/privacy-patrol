@@ -5,6 +5,7 @@ import Form from "@/app/components/Form";
 
 import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
+import { PrivacyTable } from "@/app/components/Table";
 
 import apps from '@/data/apps.json'
 
@@ -33,6 +34,7 @@ export function Notability() {
           </p>
 
         </div>
+        <PrivacyTable appName={app.App} />
       </Form.Card>
       <Footer
         handleGoBack={() => moveToApp("Your Phone")}

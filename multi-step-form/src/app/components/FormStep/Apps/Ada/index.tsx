@@ -7,6 +7,7 @@ import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
 
 import apps from '@/data/apps.json'
+import { PrivacyTable } from "@/app/components/Table";
 
 export function Ada() {
   // const {} = useForm()
@@ -31,6 +32,7 @@ export function Ada() {
             Once you completed the questionnaire, Ada provided a preliminary assessment of your symptoms, suggesting that they could indeed be related to diabetes but also emphasizing the importance of consulting a healthcare provider for a definitive diagnosis and personalized advice. The app outlined possible next steps, including recommended tests and lifestyle adjustments that could be beneficial irrespective of the diagnosis. This information armed you with the knowledge and confidence needed to approach your healthcare journey proactively. While the possibility of diabetes was daunting, the clarity and direction Ada provided made the situation feel more manageable, encouraging you to schedule an appointment with your doctor for a comprehensive evaluation and to discuss the findings from the Ada app as part of your consultation.
           </p>
         </div>
+        <PrivacyTable appName={app.App} />
       </Form.Card>
       <Footer
         handleGoBack={() => moveToApp("Your Phone")}

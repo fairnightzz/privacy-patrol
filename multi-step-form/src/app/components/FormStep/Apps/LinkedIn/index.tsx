@@ -5,6 +5,7 @@ import Form from "@/app/components/Form";
 
 import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
+import { PrivacyTable } from "@/app/components/Table";
 
 import apps from '@/data/apps.json'
 
@@ -32,6 +33,7 @@ export function LinkedIn() {
             As you meticulously enter your data, a part of you questions the necessity of such detailed information for a job-seeking platform. &quot;Do they really need to know about my participation in a high school science fair?&quot; you wonder, pausing at questions that seem only tangentially related to your career aspirations. Yet, driven by the belief that a comprehensive profile could be your ticket to standout co-op opportunities, you press on. You reflect on the stories of peers who&apos;ve landed their dream roles through connections made on LinkedIn, and this motivates you to share even the minutiae of your achievements and experiences. With each piece of information you provide, you&apos;re investing in the hope that it will pay dividends in the form of job offers and professional networks that will launch your career to new heights.
           </p>
         </div>
+        <PrivacyTable appName={app.App} />
       </Form.Card>
       <Footer
         handleGoBack={() => moveToApp("Your Phone")}

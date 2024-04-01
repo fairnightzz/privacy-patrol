@@ -5,6 +5,7 @@ import Form from "@/app/components/Form";
 
 import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
+import { PrivacyTable } from "@/app/components/Table";
 
 import apps from '@/data/apps.json'
 
@@ -32,6 +33,7 @@ export function Delta() {
             As you began to use the Delta app more extensively, its value in managing your travel itinerary became abundantly clear. The convenience of having all your travel details at your fingertips, from gate changes to SkyMiles tracking, made navigating through airports a breeze. Especially beneficial was the ability to update and manage sensitive information securely, enhancing your travel experience with personalized alerts and streamlined check-ins. The app became an indispensable tool for your travels, providing not just logistical support but also peace of mind that your sensitive information was handled with care. With each notification that guided you smoothly through your journey, you grew more confident in the decision to trust the app with your travel arrangements and personal details.
           </p>
         </div>
+        <PrivacyTable appName={app.App} />
       </Form.Card>
       <Footer
         handleGoBack={() => moveToApp("Your Phone")}

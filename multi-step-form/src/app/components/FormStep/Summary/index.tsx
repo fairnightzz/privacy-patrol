@@ -18,6 +18,7 @@ export function Summary() {
 
 
   function handleGoForwardStep() {
+    // do things here
     setSubmitted(true)
   }
 
