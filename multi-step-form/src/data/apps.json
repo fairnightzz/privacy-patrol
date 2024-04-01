@@ -1,0 +1,97 @@
+[
+  {
+    "App": "Messenger",
+    "Contact": "yes",
+    "Collection": [
+      "PII",
+      "sensitive",
+      "geolocation",
+      "biometric",
+      "interactions",
+      "financial"
+    ],
+    "Relevance": 6,
+    "Use": [
+      "advertising",
+      "analytics",
+      "recommendation systems"
+    ],
+    "Disclosure": [
+      "Third parties",
+      "internal",
+      "private"
+    ],
+    "Retention": 5,
+    "Access": "yes",
+    "Category": "Social Media",
+    "Can I delete my data?": "yes",
+    "Do they sell my data?": "no",
+    "Link": "https://www.facebook.com/privacy/policy/"
+  },
+  {
+    "App": "WhatsApp",
+    "Contact": "",
+    "Collection": [],
+    "Relevance": "",
+    "Use": [],
+    "Disclosure": [],
+    "Retention": "",
+    "Access": "",
+    "Category": "Social Media",
+    "Can I delete my data?": "",
+    "Do they sell my data?": "",
+    "Link": ""
+  },
+  {
+    "App": "Instagram",
+    "Contact": "Yes",
+    "Collection": [
+      "PII",
+      "sensitive",
+      "geolocation",
+      "biometric",
+      "interactions",
+      "financial"
+    ],
+    "Relevance": 9,
+    "Use": [
+      "Advertising",
+      "analytics",
+      "recommendation systems"
+    ],
+    "Disclosure": [
+      "Third parties",
+      "internal"
+    ],
+    "Retention": 3,
+    "Access": "Yes",
+    "Category": "Social Media",
+    "Can I delete my data?": "Yes",
+    "Do they sell my data?": "No",
+    "Link": "https://help.instagram.com/"
+  },
+  {
+    "App": "Piano Tiles",
+    "Contact": "Yes",
+    "Collection": [
+      "PII",
+      "geolocation",
+      "interactions"
+    ],
+    "Relevance": 8,
+    "Use": [
+      "Advertising",
+      "analytics"
+    ],
+    "Disclosure": [
+      "Third parties",
+      "internal"
+    ],
+    "Retention": 3,
+    "Access": "Yes",
+    "Category": "Games",
+    "Can I delete my data?": "Yes",
+    "Do they sell my data?": "Yes",
+    "Link": "https://www.cmcm.com/policy/privacy.html"
+  }
+]
