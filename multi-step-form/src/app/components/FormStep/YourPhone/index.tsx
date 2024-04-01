@@ -12,6 +12,7 @@ import Form from "../../Form";
 import { Footer } from "../../Footer";
 import { IconButton } from '@radix-ui/themes';
 import { FaBars } from 'react-icons/fa';
+import Image from 'next/image';
 import apps from '@/data/apps.json'
 
 export function YourPhone() {
@@ -78,7 +79,7 @@ export function YourPhone() {
     <Fragment>
       <Form.Card>
         <Form.Header
-          title="Your phone"
+          title="Your Phone"
           description="Click on each app to view a scenarios that could arise. When you are ready, start the privacy test!"
         />
 
@@ -95,7 +96,8 @@ export function YourPhone() {
             {apps.map((app, index) => (
               <div key={index} className="flex flex-col justify-center items-center">
                 <IconButton size="4" radius="full" variant="soft" onClick={() => moveToApp(app.App)}>
-                  <FaBars />
+                  <Image src={`/images/${app.image}`} alt="Instagram" width={50} height={50} style={{ objectFit: "contain" }} className="cursor-pointer" />
+                  {/* <FaBars /> */}
                 </IconButton>
                 <div>{app.App}</div>
               </div>

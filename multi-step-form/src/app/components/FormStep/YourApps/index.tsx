@@ -28,6 +28,22 @@ export function YourApps() {
     dispatchShopping1Field,
     shopping2Field,
     dispatchShopping2Field,
+
+    health1Field,
+    dispatchHealth1Field,
+    health2Field,
+    dispatchHealth2Field,
+
+    entertainment1Field,
+    dispatchEntertainment1Field,
+    entertainment2Field,
+    dispatchEntertainment2Field,
+
+    games1Field,
+    dispatchGames1Field,
+    games2Field,
+    dispatchGames2Field,
+
     // old values
     nameField,
     dispatchNameField,
@@ -118,7 +134,7 @@ export function YourApps() {
               <Select.Group>
                 <Select.Label>Social Media</Select.Label>
                 {
-                  apps.map((app, index) => (
+                  apps.filter(app => app.Category === "Social Media").map((app, index) => (
                     <Select.Item value={app.App} key={index}>
                       {app.App}
                     </Select.Item>
@@ -134,7 +150,7 @@ export function YourApps() {
               <Select.Group>
                 <Select.Label>Social Media</Select.Label>
                 {
-                  apps.map((app, index) => (
+                  apps.filter(app => app.Category === "Social Media").map((app, index) => (
                     <Select.Item value={app.App} key={index}>
                       {app.App}
                     </Select.Item>
@@ -154,6 +170,38 @@ export function YourApps() {
             </Callout.Text>
           </Callout.Root>
 
+          <Select.Root onValueChange={(value: string) => dispatchShopping1Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Shopping</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Shopping").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
+
+          <Select.Root onValueChange={(value: string) => dispatchShopping2Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Shopping</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Shopping").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
+
           <Callout.Root>
             <Callout.Icon>
               <InfoCircledIcon />
@@ -163,6 +211,38 @@ export function YourApps() {
               Select two health apps from the dropdown below.
             </Callout.Text>
           </Callout.Root>
+
+          <Select.Root onValueChange={(value: string) => dispatchHealth1Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Health</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Health").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
+
+          <Select.Root onValueChange={(value: string) => dispatchHealth2Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Health</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Health").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
 
           <Callout.Root>
             <Callout.Icon>
@@ -174,6 +254,37 @@ export function YourApps() {
             </Callout.Text>
           </Callout.Root>
 
+          <Select.Root onValueChange={(value: string) => dispatchEntertainment1Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Entertainment</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Entertainment").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
+
+          <Select.Root onValueChange={(value: string) => dispatchEntertainment2Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Entertainment</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Entertainment").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
 
           <Callout.Root>
             <Callout.Icon>
@@ -184,6 +295,38 @@ export function YourApps() {
               select two gaming apps from the dropdown below.
             </Callout.Text>
           </Callout.Root>
+
+          <Select.Root onValueChange={(value: string) => dispatchGames1Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Games</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Games").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
+
+          <Select.Root onValueChange={(value: string) => dispatchGames2Field({ type: ACTIONS.SET_VALUE, value })}>
+            <Select.Trigger />
+            <Select.Content>
+              <Select.Group>
+                <Select.Label>Games</Select.Label>
+                {
+                  apps.filter(app => app.Category === "Games").map((app, index) => (
+                    <Select.Item value={app.App} key={index}>
+                      {app.App}
+                    </Select.Item>
+                  ))
+                }
+              </Select.Group>
+            </Select.Content>
+          </Select.Root>
         </div>
       </Form.Card>
       <Footer

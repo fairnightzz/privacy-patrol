@@ -7,8 +7,21 @@ import { Plans } from "./Plans";
 import { ScenarioOne } from "./ScenarioOne";
 import { SpecificApp } from "./App";
 import { Instagram } from "./Apps/Instagram";
-import { AddOns } from "./AddOns";
+import { PrivacyTest } from "./PrivacyTest";
 import { Summary } from "./Summary";
+import { Discord } from "./Apps/Discord";
+import { Signal } from "./Apps/Signal";
+import { Notion } from "./Apps/Notion";
+import { Notability } from "./Apps/Notability";
+import { LinkedIn } from "./Apps/LinkedIn";
+import { Walmart } from "./Apps/Walmart";
+import { Amazon } from "./Apps/Amazon";
+import { Sephora } from "./Apps/Sephora";
+import { Delta } from "./Apps/Delta";
+import { Journal } from "./Apps/Journal";
+import { Fitbit } from "./Apps/Fitbit";
+import { Ada } from "./Apps/Ada";
+
 
 const steps = [
   {
@@ -25,22 +38,30 @@ const steps = [
   },
   {
     step: 2.02,
-    component: Instagram // Targeted Advertising
+    component: Instagram
   },
-  {
-    step: 2.03,
-    component: SpecificApp // Targeted Advertising
-  },
+  { component: Discord, step: 2.03 },
+  { component: Signal, step: 2.04 },
+  { component: Notion, step: 2.05 },
+  { component: Notability, step: 2.06 },
+  { component: LinkedIn, step: 2.07 },
+  { component: Walmart, step: 2.08 },
+  { component: Amazon, step: 2.09 },
+  { component: Sephora, step: 2.10 },
+  { component: Delta, step: 2.11 },
+  { component: Journal, step: 2.12 },
+  { component: Fitbit, step: 2.13 },
+  { component: Ada, step: 2.14 },
   {
     step: 3,
-    component: AddOns
+    component: PrivacyTest
   },
+  // {
+  //   step: 4,
+  //   component: AddOns
+  // },
   {
     step: 4,
-    component: AddOns
-  },
-  {
-    step: 5,
     component: Summary
   }
 ]

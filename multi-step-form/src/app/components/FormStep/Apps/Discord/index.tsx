@@ -8,10 +8,10 @@ import { useForm } from "@/app/hooks/use-form";
 
 import apps from '@/data/apps.json'
 
-export function Instagram() {
+export function Discord() {
   // const {} = useForm()
 
-  const app = apps.find(({ App }) => App === "Instagram") || apps[0]
+  const app = apps.find(({ App }) => App === "Discord") || apps[0]
   const { handleNextStep, handlePreviousStep, moveToApp } = useFormStep()
 
   return (

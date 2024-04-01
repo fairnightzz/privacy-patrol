@@ -20,6 +20,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "instagram.webp",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Social Media",
@@ -44,6 +45,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "discord.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Social Media",
@@ -65,6 +67,7 @@
         "Disclosure": [
             "Private"
         ],
+        "image": "signal.png",
         "Retention": 1,
         "Access": "Yes",
         "Category": "Social Media",
@@ -91,6 +94,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "notion.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Productivity",
@@ -116,6 +120,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "notability.jpeg",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Productivity",
@@ -144,6 +149,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "linkedin.webp",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Business",
@@ -175,6 +181,7 @@
             "internal",
             "private"
         ],
+        "image": "walmart.png",
         "Retention": 5,
         "Access": "yes",
         "Category": "Shopping",
@@ -204,6 +211,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "amazon.png",
         "Retention": 4,
         "Access": "Yes",
         "Category": "Shopping",
@@ -232,6 +240,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "sephora.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Shopping",
@@ -260,6 +269,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "delta.png",
         "Retention": 4,
         "Access": "Yes",
         "Category": "Travel",
@@ -284,6 +294,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "journal.webp",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Health",
@@ -313,6 +324,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "fitbit.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Health",
@@ -340,6 +352,7 @@
             "Third parties",
             "internal"
         ],
+        "image": "ada.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Health",

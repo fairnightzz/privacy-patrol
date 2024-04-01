@@ -24,6 +24,24 @@ type FormContextData = {
   shopping2Field: Field;
   dispatchShopping2Field: React.Dispatch<any>;
 
+  health1Field: Field;
+  dispatchHealth1Field: React.Dispatch<any>;
+
+  health2Field: Field;
+  dispatchHealth2Field: React.Dispatch<any>;
+
+  entertainment1Field: Field;
+  dispatchEntertainment1Field: React.Dispatch<any>;
+
+  entertainment2Field: Field;
+  dispatchEntertainment2Field: React.Dispatch<any>;
+
+  games1Field: Field;
+  dispatchGames1Field: React.Dispatch<any>;
+
+  games2Field: Field;
+  dispatchGames2Field: React.Dispatch<any>;
+
   nameField: Field;
   dispatchNameField: React.Dispatch<any>;
   emailField: Field;
@@ -51,6 +69,24 @@ export const FormContext = createContext({
   dispatchShopping1Field: () => { },
   shopping2Field: initialState,
   dispatchShopping2Field: () => { },
+
+  // Health
+  health1Field: initialState,
+  dispatchHealth1Field: () => { },
+  health2Field: initialState,
+  dispatchHealth2Field: () => { },
+
+  // Entertainment
+  entertainment1Field: initialState,
+  dispatchEntertainment1Field: () => { },
+  entertainment2Field: initialState,
+  dispatchEntertainment2Field: () => { },
+
+  // Games
+  games1Field: initialState,
+  dispatchGames1Field: () => { },
+  games2Field: initialState,
+  dispatchGames2Field: () => { },
 
   nameField: initialState,
   dispatchNameField: () => { },
@@ -120,6 +156,19 @@ export const FormProvider = ({ children }: FormProviderProps) => {
   const [shopping1Field, dispatchShopping1Field] = useReducer(handleFormState, initialState)
   const [shopping2Field, dispatchShopping2Field] = useReducer(handleFormState, initialState)
 
+  // Health
+  const [health1Field, dispatchHealth1Field] = useReducer(handleFormState, initialState);
+  const [health2Field, dispatchHealth2Field] = useReducer(handleFormState, initialState);
+
+  // Entertainment
+  const [entertainment1Field, dispatchEntertainment1Field] = useReducer(handleFormState, initialState);
+  const [entertainment2Field, dispatchEntertainment2Field] = useReducer(handleFormState, initialState);
+
+  // Games
+  const [games1Field, dispatchGames1Field] = useReducer(handleFormState, initialState);
+  const [games2Field, dispatchGames2Field] = useReducer(handleFormState, initialState);
+
+
   // Your Info
   const [nameField, dispatchNameField] = useReducer(handleFormState, initialState)
   const [emailField, dispatchEmailField] = useReducer(handleFormState, initialState)
@@ -183,6 +232,22 @@ export const FormProvider = ({ children }: FormProviderProps) => {
     dispatchShopping1Field,
     shopping2Field,
     dispatchShopping2Field,
+
+    health1Field,
+    dispatchHealth1Field,
+    health2Field,
+    dispatchHealth2Field,
+
+    entertainment1Field,
+    dispatchEntertainment1Field,
+    entertainment2Field,
+    dispatchEntertainment2Field,
+
+    games1Field,
+    dispatchGames1Field,
+    games2Field,
+    dispatchGames2Field,
+
     nameField,
     dispatchNameField,
     emailField,
