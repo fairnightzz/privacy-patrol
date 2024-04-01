@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 
-import { useForm } from "@/app/hooks/use-form";
-import { useFormStep } from "@/app/hooks/use-form-step";
-import { priceFormatter } from "@/app/util/price-formatter";
+import { useForm } from "../../../hooks/use-form";
+import { useFormStep } from "../../../hooks/use-form-step";
+import { priceFormatter } from "../../../util/price-formatter";
 
 import { Footer } from "../../Footer";
 import Form from "../../Form";
@@ -21,10 +21,6 @@ export function Summary() {
     setSubmitted(true)
   }
 
-  function handleChangePlan() {
-    moveToStep(2)
-  }
-
   useEffect(() => {
     if (submitted) {
       clearForm()
@@ -41,9 +37,6 @@ export function Summary() {
       <PostConfirmation />
     )
   }
-
-  const addOnsTotalPrice = addOns.reduce((acc, addOn) => acc + addOn.price, 0)
-  const finalPrice = selectedPlan.price + addOnsTotalPrice
 
   return (
     <Fragment>
