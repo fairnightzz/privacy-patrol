@@ -20,7 +20,7 @@ export function Delta() {
       <Form.Card>
         <Form.Header
           title={app.App}
-          description="Instagram is an photo and video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers."
+          description="Fly Delta helps you plan, navigate and fly with confidence. Download the app to book and manage trips, move seats, track your bags, monitor your SkyMiles® mileage balance and more. "
           image={`/images/${app.image}`}
         />
 

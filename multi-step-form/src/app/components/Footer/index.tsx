@@ -8,7 +8,7 @@ interface FooterProps {
 export function Footer({ handleGoBack, handleGoForwardStep }: FooterProps) {
   const { currentStep, steps } = useFormStep();
 
-  const numberOfSteps = steps.length;
+  const numberOfSteps = steps[steps.length - 1].number;
   const isLastStep = currentStep === numberOfSteps;
 
   return (
@@ -16,7 +16,7 @@ export function Footer({ handleGoBack, handleGoForwardStep }: FooterProps) {
       <button
         onClick={handleGoBack}
         disabled={handleGoBack === undefined}
-        className={`border-none text-sm text-grey font-medium ${currentStep === 1 ? 'invisible' : 'visible'} sm:text-base`}
+        className={`border-none bg-blue-500 hover:bg-blue-700 py-3 px-4 rounded text-sm text-white font-bold ${currentStep === 1 ? 'invisible' : 'visible'} sm:text-base`}
       >
         Go back
       </button>
@@ -24,7 +24,7 @@ export function Footer({ handleGoBack, handleGoForwardStep }: FooterProps) {
         handleGoForwardStep &&
         <button
           onClick={handleGoForwardStep}
-          className={`${isLastStep ? 'bg-purple' : 'bg-denim'} py-3 px-4 rounded text-sm text-white font-medium sm:text-base`}
+          className={`${isLastStep ? 'bg-purple' : 'bg-blue-500'} font-bold hover:bg-blue-700 py-3 px-4 rounded text-sm text-white sm:text-base`}
         >
           {isLastStep ? 'Confirm' : 'Next step'}
         </button>

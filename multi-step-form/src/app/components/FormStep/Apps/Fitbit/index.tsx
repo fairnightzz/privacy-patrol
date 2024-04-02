@@ -20,7 +20,7 @@ export function Fitbit() {
       <Form.Card>
         <Form.Header
           title={app.App}
-          description="Instagram is an photo and video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers."
+          description="The Fitbit app is a comprehensive fitness and wellness application that tracks physical activity, sleep patterns, diet, and weight, offering insights and personalized guidance to help users achieve their health and fitness goals."
           image={`/images/${app.image}`}
         />
 

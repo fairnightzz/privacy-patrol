@@ -58,6 +58,35 @@
         "Link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
     },
     {
+        "App": "Angry Birds",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "9%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "angrybirds.webp",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Games",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Privacy Policy Details": null,
+        "Link": "https://www.rovio.com/privacy/"
+    },
+    {
         "App": "Delta Airlines",
         "Contact": "Yes",
         "Collection": [
@@ -216,7 +245,7 @@
             "Third parties",
             "internal"
         ],
-        "image": "linkedin.webp",
+        "image": "linkedin.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Business",
@@ -224,6 +253,62 @@
         "Do they sell my data?": "No",
         "Privacy Policy Details": null,
         "Link": "https://www.linkedin.com/legal/privacy-policy"
+    },
+    {
+        "App": "Talking Tom",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "90%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "talkingtom.webp",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Games",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Link": "https://outfit7.com/privacy-web/"
+    },
+    {
+        "App": "Netflix",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "10%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "netflix.png",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Entertainment",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Link": "https://help.netflix.com/legal/privacy"
     },
     {
         "App": "Notability",
@@ -242,7 +327,7 @@
             "Third parties",
             "internal"
         ],
-        "image": "notability.jpeg",
+        "image": "notability.png",
         "Retention": 3,
         "Access": "Yes",
         "Category": "Productivity",
@@ -277,6 +362,31 @@
         "Do they sell my data?": "Yes",
         "Privacy Policy Details": null,
         "Link": "https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091"
+    },
+    {
+        "App": "Piano Tiles",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "geolocation",
+            "interactions"
+        ],
+        "Privacy warning": "80%",
+        "Use": [
+            "Advertising",
+            "analytics"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "pianotiles.png",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Games",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "Yes",
+        "Link": "https://www.cmcm.com/policy/privacy.html"
     },
     {
         "App": "Sephora",
@@ -330,6 +440,34 @@
         "Link": "https://signal.org/legal/"
     },
     {
+        "App": "Twitch",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "10%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "twitch.png",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Entertainment",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Link": "https://www.twitch.tv/p/en/legal/privacy-notice/"
+    },
+    {
         "App": "Walmart",
         "Contact": "yes",
         "Collection": [
@@ -360,5 +498,33 @@
         "Do they sell my data?": "yes",
         "Privacy Policy Details": null,
         "Link": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice"
+    },
+    {
+        "App": "YouTube",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "10%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "youtube.png",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Entertainment",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Link": "https://www.youtube.com/about/policies/#community-guidelines"
     }
 ]
