@@ -175,7 +175,24 @@ export function YourApps() {
               <InfoCircledIcon />
             </Callout.Icon>
             <Callout.Text>
-              You need to relax after long assignments, and this means having fun!
+              You are a student, which means you have some note taking apps.
+            </Callout.Text>
+          </Callout.Root>
+
+          {
+            apps.filter(app => app.Category === "Productivity").map((app, index) => (
+              <Card key={index}>
+                {app.App}
+              </Card>
+            ))
+          }
+
+          <Callout.Root>
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              You need to relax after long assignments, and this means having entertainment!
             </Callout.Text>
           </Callout.Root>
 

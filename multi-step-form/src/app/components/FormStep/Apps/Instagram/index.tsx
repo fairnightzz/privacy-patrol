@@ -6,6 +6,7 @@ import Form from "@/app/components/Form";
 import { useFormStep } from "@/app/hooks/use-form-step";
 import { useForm } from "@/app/hooks/use-form";
 import { PrivacyTable } from "@/app/components/Table";
+import Image from 'next/image';
 
 import apps from '@/data/apps.json'
 
@@ -32,6 +33,7 @@ export function Instagram() {
           <p className="text-black font-normal text-base ">
             Between the snippets of daily lives, the splash of occasional news, and the ever-entertaining array of pet videos, your digital wanderlust was in full swing. It was during this leisurely scroll that a notification popped up, a message from Alex, one of your closest friends. Curiosity piqued, you opened it to find a post shared with you, accompanied by Alex&apos;s message: &quot;Thought you&apos;d love this!&quot;
           </p>
+          <Image src={`/images/scenarios/instagram.webp`} className="w-full" unoptimized={true} width={500} height={100} alt="yogurt" style={{ objectFit: "cover" }} />
 
           <p className="text-black font-normal text-base ">
             The post was about Hi Yoghurt, a new brand that had apparently taken a novel approach to yoghurt, infusing it with flavors inspired by desserts from around the world. Intrigued by the concept and the vibrant, mouth-watering images of their yoghurt varieties, you found yourself clicking through to Hi Yoghurt&apos;s page. The brand&apos;s story, their commitment to natural ingredients, and the creativity behind each flavor captured your imagination. It wasn&apos;t just yoghurt; it was a culinary journey.
