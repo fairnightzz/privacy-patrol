@@ -44,6 +44,12 @@ export const FormStepProvider = ({ children }: FormStepProviderProps) => {
     { title: 'Journal', number: 2.12 },
     { title: 'Fitbit', number: 2.13 },
     { title: 'Ada', number: 2.14 },
+    { title: 'Angry Birds', number: 2.15 },
+    { title: 'Talking Tom', number: 2.16 },
+    { title: 'Piano Tiles', number: 2.17 },
+    { title: 'Netflix', number: 2.18 },
+    { title: 'Twitch', number: 2.19 },
+    { title: 'YouTube', number: 2.20 },
     { title: 'Privacy Test', number: 3 },
     { title: 'Summary', number: 4 },
   ])
