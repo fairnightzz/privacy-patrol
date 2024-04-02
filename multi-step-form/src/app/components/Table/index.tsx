@@ -11,7 +11,7 @@ const DataInfoComponent = ({ dataInfo }: any) => {
       return value.join(", ");
     }
     if (typeof value === 'string' && value.startsWith('http')) {
-      return <a href={value} target="_blank" rel="noopener noreferrer">Link</a>;
+      return <a href={value} className="text-blue-500" target="_blank" rel="noopener noreferrer">{value}</a>;
     }
     return value;
   };
@@ -19,6 +19,7 @@ const DataInfoComponent = ({ dataInfo }: any) => {
   return (
     <Fragment>
       {Object.entries(dataInfo).map(([key, value]) => (
+        key !== 'image' &&
         <DataList.Item align="center" key={key}>
           <DataList.Label minWidth="88px">{key}</DataList.Label>
           <DataList.Value>
@@ -34,7 +35,7 @@ export function PrivacyTable({ appName }: TableProps) {
   const app = apps.find(({ App }) => App === appName) || apps[0]
   return (
     <Fragment>
-      <header className="flex flex-col gap-2 sm:gap-3">
+      <header className="flex flex-col gap-2 sm:gap-3 my-5 text-2xl font-bold">
         Privacy Criteria
       </header>
 

@@ -10,7 +10,7 @@ import { ACTIONS } from "@/app/contexts/form";
 import { TextInput } from "../../Form/TextInput";
 import Form from "../../Form";
 import { Footer } from "../../Footer";
-import { Select, Callout } from '@radix-ui/themes';
+import { Select, Callout, Card } from '@radix-ui/themes';
 // import * as Select from "@radix-ui/react-select";
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon, InfoCircledIcon } from '@radix-ui/react-icons';
 
@@ -115,7 +115,7 @@ export function YourApps() {
       <Form.Card>
         <Form.Header
           title="Your Apps"
-          description="You just downloaded your new phone! Begin by selecting apps that you will use."
+          description="You just downloaded your new phone! Begin by reviewing the apps that you will use."
         />
 
         <div className="mt-5 flex flex-col gap-4">
@@ -125,40 +125,16 @@ export function YourApps() {
             </Callout.Icon>
             <Callout.Text>
               Since you are a university student, you want to stay connected with your peers.
-              Select two social media apps from the dropdown below.
             </Callout.Text>
           </Callout.Root>
-          <Select.Root onValueChange={(value: string) => dispatchSocialMedia1Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Social Media</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Social Media").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
 
-          <Select.Root onValueChange={(value: string) => dispatchSocialMedia2Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Social Media</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Social Media").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
+          {
+            apps.filter(app => app.Category === "Social Media").map((app, index) => (
+              <Card key={index}>
+                {app.App}
+              </Card>
+            ))
+          }
 
           <Callout.Root>
             <Callout.Icon>
@@ -166,41 +142,16 @@ export function YourApps() {
             </Callout.Icon>
             <Callout.Text>
               You need to shop for groceries or gifts, and this means you need some more apps.
-              Select two shopping apps from the dropdown below.
             </Callout.Text>
           </Callout.Root>
 
-          <Select.Root onValueChange={(value: string) => dispatchShopping1Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Shopping</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Shopping").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
-
-          <Select.Root onValueChange={(value: string) => dispatchShopping2Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Shopping</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Shopping").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
+          {
+            apps.filter(app => app.Category === "Shopping").map((app, index) => (
+              <Card key={index}>
+                {app.App}
+              </Card>
+            ))
+          }
 
           <Callout.Root>
             <Callout.Icon>
@@ -208,41 +159,16 @@ export function YourApps() {
             </Callout.Icon>
             <Callout.Text>
               Health is important, and this means managing your well being.
-              Select two health apps from the dropdown below.
             </Callout.Text>
           </Callout.Root>
 
-          <Select.Root onValueChange={(value: string) => dispatchHealth1Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Health</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Health").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
-
-          <Select.Root onValueChange={(value: string) => dispatchHealth2Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Health</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Health").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
+          {
+            apps.filter(app => app.Category === "Health").map((app, index) => (
+              <Card key={index}>
+                {app.App}
+              </Card>
+            ))
+          }
 
           <Callout.Root>
             <Callout.Icon>
@@ -250,83 +176,33 @@ export function YourApps() {
             </Callout.Icon>
             <Callout.Text>
               You need to relax after long assignments, and this means having fun!
-              Select two entertainment apps from the dropdown below.
             </Callout.Text>
           </Callout.Root>
 
-          <Select.Root onValueChange={(value: string) => dispatchEntertainment1Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Entertainment</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Entertainment").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
-
-          <Select.Root onValueChange={(value: string) => dispatchEntertainment2Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Entertainment</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Entertainment").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
+          {
+            apps.filter(app => app.Category === "Entertainment").map((app, index) => (
+              <Card key={index}>
+                {app.App}
+              </Card>
+            ))
+          }
 
           <Callout.Root>
             <Callout.Icon>
               <InfoCircledIcon />
             </Callout.Icon>
             <Callout.Text>
-              You love games, so
-              select two gaming apps from the dropdown below.
+              You love games. They keep you sane in Waterloo.
             </Callout.Text>
           </Callout.Root>
 
-          <Select.Root onValueChange={(value: string) => dispatchGames1Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Games</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Games").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
-
-          <Select.Root onValueChange={(value: string) => dispatchGames2Field({ type: ACTIONS.SET_VALUE, value })}>
-            <Select.Trigger />
-            <Select.Content>
-              <Select.Group>
-                <Select.Label>Games</Select.Label>
-                {
-                  apps.filter(app => app.Category === "Games").map((app, index) => (
-                    <Select.Item value={app.App} key={index}>
-                      {app.App}
-                    </Select.Item>
-                  ))
-                }
-              </Select.Group>
-            </Select.Content>
-          </Select.Root>
+          {
+            apps.filter(app => app.Category === "Games").map((app, index) => (
+              <Card key={index}>
+                {app.App}
+              </Card>
+            ))
+          }
         </div>
       </Form.Card>
       <Footer

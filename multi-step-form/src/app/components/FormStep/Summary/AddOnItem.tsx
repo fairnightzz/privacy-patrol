@@ -11,10 +11,10 @@ export function AddOnItem({ title, price, isYearly }: AddOnItemProps) {
 
   return (
     <div className="flex items-center justify-between">
-      <strong className="text-sm leading-5 font-normal text-grey">
+      <strong className="text-sm leading-relaxed font-normal text-grey">
         {title}
       </strong>
-      <span className="text-sm leading-5 font-normal text-denim">
+      <span className="text-sm leading-relaxed font-normal text-denim">
         {`+${formattedPrice}`}
       </span>
     </div>

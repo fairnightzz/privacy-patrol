@@ -1,16 +1,14 @@
 [
     {
-        "App": "Instagram",
+        "App": "Ada",
         "Contact": "Yes",
         "Collection": [
             "PII",
             "sensitive",
-            "geolocation",
-            "biometric",
             "interactions",
             "financial"
         ],
-        "Privacy warning": "62%",
+        "Privacy warning": "70%",
         "Use": [
             "Advertising",
             "analytics",
@@ -20,175 +18,14 @@
             "Third parties",
             "internal"
         ],
-        "image": "instagram.webp",
+        "image": "ada.png",
         "Retention": 3,
         "Access": "Yes",
-        "Category": "Social Media",
+        "Category": "Health",
         "Can I delete my data?": "Yes",
         "Do they sell my data?": "No",
-        "Privacy Policy Details": "Instagram's terms state they will not rent or sell a user's information without consent, but may share non-personal information with third-party organizations, service providers, affiliates, and advertising partners that help Instagram provide the service.",
-        "Link": "https://help.instagram.com/155833707900388"
-    },
-    {
-        "App": "Discord",
-        "Contact": "Yes",
-        "Collection": [
-            "PII",
-            "interactions"
-        ],
-        "Privacy warning": "65%",
-        "Use": [
-            "Analytics",
-            "recommendation systems"
-        ],
-        "Disclosure": [
-            "Third parties",
-            "internal"
-        ],
-        "image": "discord.png",
-        "Retention": 3,
-        "Access": "Yes",
-        "Category": "Social Media",
-        "Can I delete my data?": "Yes",
-        "Do they sell my data?": "No",
-        "Privacy Policy Details": null,
-        "Link": "https://discord.com/privacy"
-    },
-    {
-        "App": "Signal",
-        "Contact": "No",
-        "Collection": [
-            "PII (minimal, e.g., phone number)"
-        ],
-        "Privacy warning": "38%",
-        "Use": [
-            "Not applicable (end-to-end encryption)"
-        ],
-        "Disclosure": [
-            "Private"
-        ],
-        "image": "signal.png",
-        "Retention": 1,
-        "Access": "Yes",
-        "Category": "Social Media",
-        "Can I delete my data?": "Yes",
-        "Do they sell my data?": "No",
-        "Privacy Policy Details": null,
-        "Link": "https://signal.org/legal/"
-    },
-    {
-        "App": "Notion",
-        "Contact": "Yes",
-        "Collection": [
-            "PII",
-            "sensitive",
-            "geolocation",
-            "interactions"
-        ],
-        "Privacy warning": "100%",
-        "Use": [
-            "Analytics",
-            "recommendation systems"
-        ],
-        "Disclosure": [
-            "Third parties",
-            "internal"
-        ],
-        "image": "notion.png",
-        "Retention": 3,
-        "Access": "Yes",
-        "Category": "Productivity",
-        "Can I delete my data?": "Yes",
-        "Do they sell my data?": "Yes",
-        "Privacy Policy Details": null,
-        "Link": "https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091"
-    },
-    {
-        "App": "Notability",
-        "Contact": "Yes",
-        "Collection": [
-            "PII",
-            "sensitive",
-            "interactions"
-        ],
-        "Privacy warning": "41%",
-        "Use": [
-            "Analytics",
-            "recommendation systems"
-        ],
-        "Disclosure": [
-            "Third parties",
-            "internal"
-        ],
-        "image": "notability.jpeg",
-        "Retention": 3,
-        "Access": "Yes",
-        "Category": "Productivity",
-        "Can I delete my data?": "Yes",
-        "Do they sell my data?": "No",
-        "Privacy Policy Details": null,
-        "Link": "https://gingerlabs.com/privacy/"
-    },
-    {
-        "App": "LinkedIn",
-        "Contact": "Yes",
-        "Collection": [
-            "PII",
-            "sensitive",
-            "geolocation",
-            "interactions",
-            "financial"
-        ],
-        "Privacy warning": "60%",
-        "Use": [
-            "Advertising",
-            "analytics",
-            "recommendation systems"
-        ],
-        "Disclosure": [
-            "Third parties",
-            "internal"
-        ],
-        "image": "linkedin.webp",
-        "Retention": 3,
-        "Access": "Yes",
-        "Category": "Business",
-        "Can I delete my data?": "Yes",
-        "Do they sell my data?": "No",
-        "Privacy Policy Details": null,
-        "Link": "https://www.linkedin.com/legal/privacy-policy"
-    },
-    {
-        "App": "Walmart",
-        "Contact": "yes",
-        "Collection": [
-            "PII",
-            "sensitive",
-            "geolocation",
-            "biometric",
-            "interactions",
-            "financial",
-            "more"
-        ],
-        "Privacy warning": "100%",
-        "Use": [
-            "advertising",
-            "analytics",
-            "recommendation systems"
-        ],
-        "Disclosure": [
-            "Third parties",
-            "internal",
-            "private"
-        ],
-        "image": "walmart.png",
-        "Retention": 5,
-        "Access": "yes",
-        "Category": "Shopping",
-        "Can I delete my data?": "yes",
-        "Do they sell my data?": "yes",
-        "Privacy Policy Details": null,
-        "Link": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice"
+        "Privacy Policy Details": "If you are an Authorized User, we may provide your information to the company you are engaged or employed by to fulfill and enforce our applicable sales agreement with your company, and to inform your company regarding usage, support, or training needs",
+        "Link": "https://www.ada.cx/legal/privacy-policy/"
     },
     {
         "App": "Amazon",
@@ -221,35 +58,6 @@
         "Link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"
     },
     {
-        "App": "Sephora",
-        "Contact": "Yes",
-        "Collection": [
-            "PII",
-            "sensitive",
-            "geolocation",
-            "interactions",
-            "financial"
-        ],
-        "Privacy warning": "70%",
-        "Use": [
-            "Advertising",
-            "analytics",
-            "recommendation systems"
-        ],
-        "Disclosure": [
-            "Third parties",
-            "internal"
-        ],
-        "image": "sephora.png",
-        "Retention": 3,
-        "Access": "Yes",
-        "Category": "Shopping",
-        "Can I delete my data?": "Yes",
-        "Do they sell my data?": "No",
-        "Privacy Policy Details": "But a lot of information is shared with third parties like sister companies, business partners, and stock holders",
-        "Link": "https://www.sephora.com/beauty/privacy-policy"
-    },
-    {
         "App": "Delta Airlines",
         "Contact": "Yes",
         "Collection": [
@@ -279,29 +87,29 @@
         "Link": "https://www.delta.com/us/en/legal/privacy-and-security"
     },
     {
-        "App": "Journal",
+        "App": "Discord",
         "Contact": "Yes",
         "Collection": [
             "PII",
-            "sensitive",
             "interactions"
         ],
-        "Privacy warning": "10%",
+        "Privacy warning": "65%",
         "Use": [
-            "Analytics"
+            "Analytics",
+            "recommendation systems"
         ],
         "Disclosure": [
             "Third parties",
             "internal"
         ],
-        "image": "journal.webp",
+        "image": "discord.png",
         "Retention": 3,
         "Access": "Yes",
-        "Category": "Health",
+        "Category": "Social Media",
         "Can I delete my data?": "Yes",
         "Do they sell my data?": "No",
         "Privacy Policy Details": null,
-        "Link": "https://www.apple.com/legal/privacy/data/en/journaling-suggestions/"
+        "Link": "https://discord.com/privacy"
     },
     {
         "App": "Fitbit",
@@ -334,11 +142,149 @@
         "Link": "https://www.fitbit.com/global/en-ca/legal/privacy-policy#how-we-use-info"
     },
     {
-        "App": "Ada",
+        "App": "Instagram",
         "Contact": "Yes",
         "Collection": [
             "PII",
             "sensitive",
+            "geolocation",
+            "biometric",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "62%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "instagram.webp",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Social Media",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Privacy Policy Details": "Instagram's terms state they will not rent or sell a user's information without consent, but may share non-personal information with third-party organizations, service providers, affiliates, and advertising partners that help Instagram provide the service.",
+        "Link": "https://help.instagram.com/155833707900388"
+    },
+    {
+        "App": "Journal",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "interactions"
+        ],
+        "Privacy warning": "10%",
+        "Use": [
+            "Analytics"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "journal.webp",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Health",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Privacy Policy Details": null,
+        "Link": "https://www.apple.com/legal/privacy/data/en/journaling-suggestions/"
+    },
+    {
+        "App": "LinkedIn",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions",
+            "financial"
+        ],
+        "Privacy warning": "60%",
+        "Use": [
+            "Advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "linkedin.webp",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Business",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Privacy Policy Details": null,
+        "Link": "https://www.linkedin.com/legal/privacy-policy"
+    },
+    {
+        "App": "Notability",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "interactions"
+        ],
+        "Privacy warning": "41%",
+        "Use": [
+            "Analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "notability.jpeg",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Productivity",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Privacy Policy Details": null,
+        "Link": "https://gingerlabs.com/privacy/"
+    },
+    {
+        "App": "Notion",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "interactions"
+        ],
+        "Privacy warning": "100%",
+        "Use": [
+            "Analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal"
+        ],
+        "image": "notion.png",
+        "Retention": 3,
+        "Access": "Yes",
+        "Category": "Productivity",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "Yes",
+        "Privacy Policy Details": null,
+        "Link": "https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091"
+    },
+    {
+        "App": "Sephora",
+        "Contact": "Yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
             "interactions",
             "financial"
         ],
@@ -352,13 +298,67 @@
             "Third parties",
             "internal"
         ],
-        "image": "ada.png",
+        "image": "sephora.png",
         "Retention": 3,
         "Access": "Yes",
-        "Category": "Health",
+        "Category": "Shopping",
         "Can I delete my data?": "Yes",
         "Do they sell my data?": "No",
-        "Privacy Policy Details": "If you are an Authorized User, we may provide your information to the company you are engaged or employed by to fulfill and enforce our applicable sales agreement with your company, and to inform your company regarding usage, support, or training needs",
-        "Link": "https://www.ada.cx/legal/privacy-policy/"
+        "Privacy Policy Details": "But a lot of information is shared with third parties like sister companies, business partners, and stock holders",
+        "Link": "https://www.sephora.com/beauty/privacy-policy"
+    },
+    {
+        "App": "Signal",
+        "Contact": "No",
+        "Collection": [
+            "PII (minimal, e.g., phone number)"
+        ],
+        "Privacy warning": "38%",
+        "Use": [
+            "Not applicable (end-to-end encryption)"
+        ],
+        "Disclosure": [
+            "Private"
+        ],
+        "image": "signal.png",
+        "Retention": 1,
+        "Access": "Yes",
+        "Category": "Social Media",
+        "Can I delete my data?": "Yes",
+        "Do they sell my data?": "No",
+        "Privacy Policy Details": null,
+        "Link": "https://signal.org/legal/"
+    },
+    {
+        "App": "Walmart",
+        "Contact": "yes",
+        "Collection": [
+            "PII",
+            "sensitive",
+            "geolocation",
+            "biometric",
+            "interactions",
+            "financial",
+            "more"
+        ],
+        "Privacy warning": "100%",
+        "Use": [
+            "advertising",
+            "analytics",
+            "recommendation systems"
+        ],
+        "Disclosure": [
+            "Third parties",
+            "internal",
+            "private"
+        ],
+        "image": "walmart.png",
+        "Retention": 5,
+        "Access": "yes",
+        "Category": "Shopping",
+        "Can I delete my data?": "yes",
+        "Do they sell my data?": "yes",
+        "Privacy Policy Details": null,
+        "Link": "https://corporate.walmart.com/privacy-security/walmart-privacy-notice"
     }
 ]

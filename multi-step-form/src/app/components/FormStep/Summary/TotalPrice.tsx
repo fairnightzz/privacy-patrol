@@ -11,10 +11,10 @@ export function TotalPrice({ finalPrice, isYearly }: TotalPriceProps) {
 
   return (
     <div className="mt-6 flex items-center justify-between px-4 sm:px-6">
-      <strong className="text-sm leading-5 font-normal text-grey">
+      <strong className="text-sm leading-relaxed font-normal text-grey">
         {`Total (${period})`}
       </strong>
-      <span className="text-base leading-5 font-bold text-purple sm:text-xl">
+      <span className="text-base leading-relaxed font-bold text-purple sm:text-xl">
         {priceFormatter(finalPrice, isYearly)}
       </span>
     </div>

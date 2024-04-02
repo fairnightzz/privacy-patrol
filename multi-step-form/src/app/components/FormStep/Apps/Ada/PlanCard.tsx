@@ -39,7 +39,7 @@ export function PlanCard({ plan, icon, isSelected, handleSelectPlan, freeTrialDe
           {plan.name}
         </strong>
 
-        <span className="text-sm font-normal text-grey leading-5">
+        <span className="text-sm font-normal text-grey leading-relaxed">
           {priceFormatter(plan.price[planType], isYearly)}
         </span>
 
