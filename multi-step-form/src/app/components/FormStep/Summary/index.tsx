@@ -353,7 +353,7 @@ export function Summary() {
                 }
               </Callout.Icon>
               <Callout.Text>
-                {question6.value}
+                {question7.value}
               </Callout.Text>
             </Callout.Root>
             {

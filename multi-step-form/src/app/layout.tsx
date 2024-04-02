@@ -8,8 +8,8 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
-  title: 'Privacy Patrol',
-  description: 'Multi Step Game',
+  title: 'Privacy Quest',
+  description: 'CS 492 Project to test your Privacy Awareness',
 }
 
 export default function RootLayout({

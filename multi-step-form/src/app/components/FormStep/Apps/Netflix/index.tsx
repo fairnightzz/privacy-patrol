@@ -20,16 +20,13 @@ export function Netflix() {
       <Form.Card>
         <Form.Header
           title={app.App}
-          description="Get a health check for yourself and your relatives. You can check your symptoms online 24/7 and find out possible causes. Whatever's bothering you, from pain, headache, or anxiety to allergy or food intolerance, the free Ada app (symptom checker) could help you find answers from the comfort of your home. Doctors have trained Ada for years so that you can get an assessment within minutes."
+          description="A streaming service offering a wide array of TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
           image={`/images/${app.image}`}
         />
 
         <div className="flex flex-col gap-3 mt-5">
           <p className="text-black font-normal text-base ">
-            Concerned about experiencing symptoms that could be indicative of diabetes, such as increased thirst, frequent urination, and unexplained weight loss, you turned to the Ada app for insight. The app, known for its detailed symptom analysis, seemed like a discreet and immediate way to address your growing concerns without the initial overwhelm of a doctor&apos;s visit. After downloading Ada, you meticulously entered each symptom, taking care to include every relevant detail about your health and recent changes you had noticed. The process was intuitive, with Ada asking follow-up questions that made you feel as though you were having a conversation with a healthcare professional, guiding you through each step with precision and understanding.
-          </p>
-          <p className="text-black font-normal text-base ">
-            Once you completed the questionnaire, Ada provided a preliminary assessment of your symptoms, suggesting that they could indeed be related to diabetes but also emphasizing the importance of consulting a healthcare provider for a definitive diagnosis and personalized advice. The app outlined possible next steps, including recommended tests and lifestyle adjustments that could be beneficial irrespective of the diagnosis. This information armed you with the knowledge and confidence needed to approach your healthcare journey proactively. While the possibility of diabetes was daunting, the clarity and direction Ada provided made the situation feel more manageable, encouraging you to schedule an appointment with your doctor for a comprehensive evaluation and to discuss the findings from the Ada app as part of your consultation.
+            You settle into your favorite spot and open Netflix, greeted by a cascade of movie and series thumbnails spanning genres and interests. With a scroll and a few taps, you dive into the vast library, selecting a critically acclaimed series that you&apos;ve been meaning to watch. As the episode begins, you&apos;re drawn into an intricately woven narrative, the outside world fading away as you embark on a binge-watching journey, immersing yourself in the lives of characters and stories from across the globe.
           </p>
         </div>
         <PrivacyTable appName={app.App} />
