@@ -1,6 +1,6 @@
 # CS 492 Privacy Quest
 
-This is Freya Zhang and Zhehai Zhang's CS 492 Project. Hosted on a [website](https://cs492.zhehaizhang.com).
+This is Freya Zhang and Zhehai Zhang's CS 492 Project. Hosted on a [website](https://cs492.zhehaizhang.com). Video Demo is on [link](https://youtu.be/0uETQPHVioI)
 
 PrivacyQuest is an interactive game designed to enhance digital literacy and privacy awareness among users. The game begins in a simulated environment as the player receives a new smartphone loaded with various apps. Through interactive gameplay, realistic scenarios and a quiz, users embark on an educational journey, discovering the often overlooked aspects of app privacy policies and their implications on personal data. 
 
